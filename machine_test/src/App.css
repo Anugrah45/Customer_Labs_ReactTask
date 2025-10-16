@@ -1,0 +1,25 @@
+button,input, table, select{
+    all:revert;
+    cursor: pointer;
+}
+.modal_open{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    position: fixed;
+    inset: 0;
+}
+.modal_overlay{
+    width: 800px;
+    text-align: center;
+    background: #111c2d;
+    border-radius: 4px;
+    padding: 24px;
+}
+table, th, td {
+  border: 1px solid gray;
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: start;
+}
