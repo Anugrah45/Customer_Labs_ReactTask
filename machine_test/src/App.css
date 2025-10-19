@@ -23,3 +23,25 @@ table, th, td {
   padding: 5px;
   text-align: start;
 }
+.custom-select {
+  appearance: none;           /* hide system arrow */
+  -webkit-appearance: none;   /* for Safari */
+  -moz-appearance: none;      /* for Firefox */
+
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px 32px 8px 12px; /* make space for arrow */
+  font-size: 14px;
+
+  background-image: url("data:image/svg+xml,<svg fill='gray' height='16' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M5 7l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center; /* 🔥 change this value */
+  background-size: 1rem;                     /* arrow size */
+}
+
+.custom-select:focus {
+  outline: none;
+  border-color: #00bcd4;
+  box-shadow: 0 0 0 2px rgba(0,188,212,0.3);
+}
