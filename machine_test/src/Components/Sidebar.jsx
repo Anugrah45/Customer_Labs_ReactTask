@@ -91,7 +91,7 @@ export default function SegmentBuilder({ setIsOpen, isOpen }) {
       setCurrentSchema("");
       setIsOpen(false);
     } catch (error) {
-      console.error("❌ Error saving segment:", error);
+      console.error("Error saving segment:", error);
       alert("Failed to save segment. Check console for details.");
     }
   };
