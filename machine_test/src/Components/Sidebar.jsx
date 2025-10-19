@@ -81,9 +81,9 @@ export default function SegmentBuilder({ setIsOpen, isOpen }) {
       });
 
       if (response.status === 200 || response.status === 201) {
-        alert("✅ Segment saved successfully!");
+        alert("Segment saved successfully!");
       } else {
-        alert("⚠️ Failed to save segment. Check console for details.");
+        alert("Failed to save segment. Check console for details.");
         console.error("Error response:", response);
       }
       setSegmentName("");
